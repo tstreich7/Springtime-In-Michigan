@@ -32,8 +32,8 @@ header {
 
 /* Navigation */
 nav {
-  display: inline-block; /* Macht das nav-Element zu inline-block */
-  width: 80%; /* Breite von etwa 80% */
+  display: inline-block;
+  width: 80%;
   background-color: #333;
   text-align: center;
 }
@@ -65,7 +65,7 @@ nav a:hover {
 nav img {
   width: 10%;
   position: relative;
-  top: 20px; /* Optional für das Layout */
+  top: 20px;
 }
 
 /* Main-Inhalt */
@@ -93,8 +93,8 @@ main {
 /* Flex-Klasse für Flexbox-Layout */
 .flex {
   display: flex;
-  flex-wrap: wrap; /* Ermöglicht das Umwickeln von Elementen */
-  justify-content: space-between; /* Verteilte Elemente im Container */
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* Anpassungen für Flexbox-Klasse bei Bedarf */
