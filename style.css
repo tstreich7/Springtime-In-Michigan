@@ -1,0 +1,145 @@
+/* Allgemeine Einstellungen für den Body */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Skip-Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 10px;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+/* Header */
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  display: inline-block; /* Macht das nav-Element zu inline-block */
+  width: 80%; /* Breite von etwa 80% */
+  background-color: #333;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  /* Kommentar für das li-Element */
+  /* display: inline-block; 
+  margin: 0 20px; */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Bild im nav-Element */
+nav img {
+  width: 10%;
+  position: relative;
+  top: 20px; /* Optional für das Layout */
+}
+
+/* Main-Inhalt */
+main {
+  background-color: #e9f5ff;
+  font-size: 1.1rem;
+  padding: 20px;
+}
+
+/* Grid-Klasse für zweispaltiges Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%; /* Zweispaltiges Raster, jede Spalte ist 40% breit */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px; /* Abstand zwischen den Zeilen */
+}
+
+/* Bilder in der Grid-Klasse auf 100% Breite setzen */
+.grid img {
+  width: 100%; /* Alle Bilder in der Grid-Klasse haben eine Breite von 100% */
+}
+
+/* Flex-Klasse für Flexbox-Layout */
+.flex {
+  display: flex;
+  flex-wrap: wrap; /* Ermöglicht das Umwickeln von Elementen */
+  justify-content: space-between; /* Verteilte Elemente im Container */
+}
+
+/* Anpassungen für Flexbox-Klasse bei Bedarf */
+.flex img {
+  margin: 10px;
+}
+
+/* Fußzeile */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Anpassungen für kleinere Bildschirme */
+@media screen and (max-width: 768px) {
+  /* Anpassungen für das Layout bei schmaleren Bildschirmen */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+
+  main img {
+    width: 90px;
+  }
+
+  .grid {
+    grid-template-columns: 100%; /* Nur eine Spalte auf kleineren Bildschirmen */
+  }
+
+  .flex {
+    flex-direction: column; /* Flexbox in Spaltenrichtung auf kleineren Bildschirmen */
+  }
+}
